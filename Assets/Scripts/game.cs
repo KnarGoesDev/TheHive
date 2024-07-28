@@ -6,11 +6,6 @@ using TMPro;
 
 
 
-
-
-
-
-
 public class game : MonoBehaviour
 {
     
@@ -32,14 +27,17 @@ public class game : MonoBehaviour
     }
    
 
-   void NewBourn(){
+    void NewBourn(){
     theCandidate = new Breed(theQueen.GetScore());
    }
-   void Awake(){
+   
+
+    void Awake(){
         theCandidate = new Breed(0f);
         theQueen = new Breed(10f);
         QueenStats = theQueen.GetStats();
    }
+
 
     void Start()
     {
@@ -48,7 +46,6 @@ public class game : MonoBehaviour
 
         
     }
-
 
     // Update is called once per frame
     void Update()
